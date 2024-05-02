@@ -27,7 +27,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/' ./feeds/luci/collections/luci-
 bash ${OP_SC_DIR}/../PATCH/app/Argon.sh
 
 # ShellClash
-bash ${OP_SC_DIR}/../PATCH/app/ShellClash.sh
+#bash ${OP_SC_DIR}/../PATCH/app/ShellClash.sh
 
 # frpc
 # bash ${OP_SC_DIR}/../PATCH/app/frpc.sh
@@ -42,7 +42,7 @@ bash ${OP_SC_DIR}/../PATCH/app/ShellClash.sh
 # sed -i '/sysctl.d/d' feeds/packages/utils/dockerd/Makefile
 
 # 调整默认 LAN IP
-sed -i 's/192.168.1.1/192.168.24.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.40.1/g' package/base-files/files/bin/config_generate
 ################ 自定义部分 -End- ################
 
 
